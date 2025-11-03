@@ -12,10 +12,21 @@ Queste azioni sono considerate infrazioni perché rappresentano un tentativo del
 
 #### 1. Esecuzione da Drive Esterni (USB, Hard Disk Esterni)
 
-* **Scopo della Tecnica:** Il player memorizza ed esegue i cheat direttamente da un dispositivo di archiviazione USB. Spesso, il dispositivo viene scollegato subito prima del controllo per rimuovere fisicamente le prove. L'efficacia di questa tecnica dipende dal file system utilizzato sul drive esterno.
+* **Scopo della Tecnica:** Il player memorizza ed esegue i cheat direttamente da un dispositivo di archiviazione USB o da una partizione dedicata. Spesso, il dispositivo viene scollegato o la partizione nascosta subito prima del controllo per rimuovere fisicamente le prove. L'efficacia di questa tecnica evasiva aumenta notevolmente se viene utilizzato un file system specifico.
 * **Il Ruolo del File System (FAT32/exFAT vs. NTFS):**
-  * **FAT32/exFAT:** Questi file system, molto comuni sulle chiavette USB, **non supportano il journaling (USN Journal)**. Questo significa che le operazioni sui file (creazione, cancellazione, rinomina) non vengono registrate in un log centrale come su un drive NTFS. La cancellazione di un cheat da un drive FAT32 lascia molte meno tracce.
-  * **NTFS:** Se il drive esterno è formattato in NTFS, avrà il suo USN Journal, che può essere analizzato separatamente.
+  * **FAT32/exFAT:** Questi file system, molto comuni sulle chiavette USB, **non supportano il journaling (USN Journal)**. Questo significa che le operazioni sui file (creazione, cancellazione, rinomina) non vengono registrate in un log centrale come su un drive NTFS. La cancellazione di un cheat da un drive FAT32 lascia molte meno tracce ed è più difficile da provare.
+  * **NTFS:** Se il drive esterno o la partizione è formattato in NTFS, avrà il suo USN Journal, che può essere analizzato separatamente per tracciare le attività.
+
+{% hint style="danger" %}
+**La semplice connessione** di un dispositivo USB, disco o partizione formattato in **FAT32 o exFAT non è, di per sé, un'infrazione.**
+
+Tuttavia, **è considerata un'infrazione l'esecuzione di qualsiasi file da un volume FAT32 o exFAT durante la stessa sessione di avvio del PC (dall'ultimo boot).**
+
+**Motivazione:** Sebbene esistano metodi per tracciare file cancellati o manipolati su volumi FAT32, le tecniche di bypass più avanzate possono rendere questa analisi estremamente lunga, complessa e, in alcuni casi, inconcludente. Poiché non esiste una ragione pratica legittima per eseguire file da un volume FAT32/exFAT durante una sessione di gioco competitiva, questa regola viene implementata per due scopi principali:
+
+1. **Semplificare e rendere più efficiente il lavoro degli SS Verified.**
+2. **Disincentivare attivamente l'uso di questa nota tecnica di bypass.**
+{% endhint %}
 
 ***
 
