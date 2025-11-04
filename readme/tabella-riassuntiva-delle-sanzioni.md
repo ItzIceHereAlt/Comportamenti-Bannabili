@@ -12,22 +12,24 @@ Le sanzioni elencate di seguito sono da considerarsi uno standard di riferimento
 
 #### Tabella delle Infrazioni e Sanzioni Consigliate
 
-| Infrazione                                        | Motivazione Ufficiale Consigliata              | Durata Consigliata |
-| ------------------------------------------------- | ---------------------------------------------- | ------------------ |
-| **Disabilitazione di Servizi Critici**            | `Anti-Forensics / Ostruzione del Controllo`    | `Da definire`      |
-| **Cancellazione di Artefatti Forensi**            | `Anti-Forensics / Distruzione di Prove`        | `Da definire`      |
-| **Manipolazione di Timestamp (Timestomping)**     | `Anti-Forensics / Alterazione di Prove`        | `Da definire`      |
-| **Manipolazione di Attributi (es. Read-Only)**    | `Anti-Forensics / Alterazione di Prove`        | `Da definire`      |
-| **Utilizzo di Partizioni/Drive per Occultamento** | `Anti-Forensics / Occultamento di Prove`       | `Da definire`      |
-| **Rifiuto Esplicito del Controllo**               | `Rifiuto di Collaborazione`                    | `Da definire`      |
-| **Interruzione della Connessione Remota**         | `Ostruzione del Controllo`                     | `Da definire`      |
-| **Riavvio o Spegnimento non Autorizzato**         | `Ostruzione Grave del Controllo`               | `Da definire`      |
-| **Ostruzionismo Attivo/Passivo**                  | `Ostruzione del Controllo`                     | `Da definire`      |
-| **Utilizzo di Ambienti Virtualizzati (VM)**       | `Bypass / Ostruzione tramite Virtualizzazione` | `Da definire`      |
-| **Esecuzioni "Fileless"**                         | `Bypass Avanzato / Esecuzione Nascosta`        | `Da definire`      |
-| **Utilizzo del Task Scheduler (per bypass)**      | `Bypass Avanzato / Persistenza Illecita`       | `Da definire`      |
-| **Utilizzo di ADS e WMIC (per bypass)**           | `Bypass Avanzato / Occultamento Tramite ADS`   | `Da definire`      |
-| **Process Hollowing**                             | `Bypass Avanzato / Iniezione di Codice`        | `Da definire`      |
+| Infrazione                                        | Motivazione Ufficiale Consigliata | Durata Consigliata       |
+| ------------------------------------------------- | --------------------------------- | ------------------------ |
+| **Disabilitazione di Servizi Critici**            | `Processi Disabilitati`           | `Da definire dal server` |
+| **Cancellazione di Artefatti Forensi**            | `Pulizia di Artefatti`            | `Da definire dal server` |
+| **Manipolazione di Timestamp (Timestomping)**     | `Alterazione di Prove`            | `Da definire dal server` |
+| **Manipolazione di Attributi (es. Read-Only)**    | `Alterazione di Prove`            | `Da definire dal server` |
+| **Utilizzo di Partizioni/Drive per Occultamento** | `Occultamento di Prove`           | `Da definire dal server` |
+| **Rifiuto Esplicito del Controllo**               | `Rifiuto`                         | `Da definire dal server` |
+| **Interruzione della Connessione Remota**         | `Rifiuto + Stalling`              | `Da definire dal server` |
+| **Riavvio o Spegnimento non Autorizzato**         | `Rifiuto + Stalling`              | `Da definire dal server` |
+| **Ostruzionismo Attivo/Passivo**                  | `Rifiuto + Stalling`              | `Da definire dal server` |
+| **Utilizzo di Ambienti Virtualizzati (VM)**       | `Virtual Machine`                 | `Da definire dal server` |
+| **Esecuzioni "Fileless"**                         | `Cheating SS`                     | `Da definire dal server` |
+| **Utilizzo del Task Scheduler (per bypass)**      | `Cheating SS`                     | `Da definire dal server` |
+| **Utilizzo di ADS e WMIC (per bypass)**           | `Cheating SS`                     | `Da definire dal server` |
+| **Process Hollowing**                             | `Cheating SS`                     | `Da definire dal server` |
+
+***
 
 ***
 
