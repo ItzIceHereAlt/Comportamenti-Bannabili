@@ -12,7 +12,7 @@ In questa pagina sono elencati i servizi critici che dovrebbero essere monitorat
 
 #### Come Verificare lo Stato di un Servizio
 
-La procedura standard per verificare lo stato di un servizio è utilizzare il Prompt dei Comandi (CMD) con privilegi di amministratore.
+La procedura standard, ma non la migliore, per verificare lo stato di un servizio è utilizzare il Prompt dei Comandi (CMD) con privilegi di amministratore.
 
 1. Apri il menu Start, cerca `cmd`, clicca con il tasto destro su "Prompt dei comandi" e seleziona "Esegui come amministratore".
 2.  Digita il comando seguente, sostituendo `[nome_servizio]` con il nome del servizio da controllare (es. `sysmain`).
